@@ -1,0 +1,87 @@
+body {
+          margin: 0;
+          font-family: Caveat;
+          background-color: #05bafd;
+        }
+        header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: blue;
+  color: #333;
+  
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+
+        .contenedor {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .imagen-con-texto {
+      text-align: center;
+      width: 48%; 
+    }
+    .imagen-con-texto img {
+      width: 100%;
+      height: auto;
+    }
+     .container {
+  display: flex;
+  gap: 20px; 
+}
+
+.cuadro { 
+  border: 2px solid #333;
+  padding: 20px;
+  background-color: blue;
+  width: 300px;
+  border-radius: 10px;
+  font-size: 40px;
+}
+
+.formulario-contacto {
+  max-width: 400px;
+}
+
+.formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-contacto label {
+  margin-top: 10px;
+}
+
+.formulario-contacto input {
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.formulario-contacto button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario-contacto button:hover { 
+  background-color: #0056b3;
+}
