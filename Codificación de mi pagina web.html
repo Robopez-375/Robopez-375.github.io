@@ -4,34 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-          margin: 0;
-          font-family: Caveat;
-        }
-        header {
-          background-color: blue;
-          color: grey;
-          padding: 50px 20px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-        }
-        .logo {
-          font-size: 1.5em;
-          font-weight: bold;
-        }
-        nav a {
-          color: grey;
-          text-decoration: none;
-          margin-left: 20px;
-          transition: color 0.3s;
-        }
-        nav a:hover {
-          color: #f39c12;
-          }
-
-      </style>
 </head>
 <body>
     <header>
@@ -43,40 +15,58 @@
           <a href="#Noticias">Noticias</a>
         </nav>
       </header>
-      <p picture>Ayudemos mejorando la infraestructura en zonas que requieren higiene, remodelación urbanística, y buen tratado del agua.</p>
-        <source srcset="sourceset" type="image/svg+xml" />
-        <img
-            src="https://larepublica.cronosmedia.glr.pe/data/2021/12/21/loreto-agua-3.png"
-            class="img-fluid"
-            alt="image desc"
-           <img src="imagen.jpg" alt="Descripción" width="200" height="150">
-           </picture>
+      <br>
+      <h1>Bienvenido</h1>
+      <div class="contenedor">
+    <div class="imagen-con-texto">
+      <p>
+        Ayudemos mejorando la infraestructura en zonas que requieren higiene, 
+        remodelación urbanística, y buen tratado del agua.
+      </p>
+      <img
+        src="https://larepublica.cronosmedia.glr.pe/data/2021/12/21/loreto-agua-3.png"
+        alt="Descripción de la imagen">
+    </div>
 
-      <p picture> Contrarrestar los impactos industriales y de la minería ilegal para mantener el agua limpia en zonas necesitadas</p>
-        <source srcset="sourceset" type="image/svg+xml" />
-        <img
-            src="https://i0.wp.com/efe.com/wp-content/uploads/2024/08/Peru.jpg?fit=1080%2C720&ssl=1"
-            class="img-fluid"
-            alt="image desc"
-            <img src="imagen.jpg" alt="Descripción" width="200" height="150">
-           </picture>
+    <div class="imagen-con-texto">
+      <p>
+        Contrarrestar los impactos industriales y de la minería ilegal para mantener el agua limpia en zonas necesitadas.
+      </p>
+      <img
+        src="https://i0.wp.com/efe.com/wp-content/uploads/2024/08/Peru.jpg?fit=1080%2C720&ssl=1"
+        alt="Otra descripción de la imagen">
+    </div>
+  </div>
+      <hr>
    
 </p>
-<p picture>En el país 9 de cada 10 personas cuentan con acceso a agua potable en sus hogares a través de la red pública, siendo este el 90.6% de la población. En cambio, el 33% no cuenta con esta red de agua potable, ya que su acceso es limitado al no contar con servicios de saneamiento.
-        Nuestra misión es generar proyectos de solución para que empresas y ONGs lo implementen en sus proyectos y aseguren que todo el país cuente con agua potable en sus hogares.</p>
-        
-        <source srcset="sourceset" type="image/svg+xml" />
-        <img
-            src="	https://sinia.minam.gob.pe/sites/default/files/sinia/archivos/public/docs/750.jpg"
-            class="img-fluid"
-            alt="image desc"
-            <img src="imagen.jpg" alt="Descripción" width="200" height="150">
-            <div style="text-align: right;">
-  <img src="imagen.jpg" alt="Descripción" style="width: 200px; height: auto;">
-  
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div style="flex: 1; padding-right: 20px;">
+    <p>
+      En el país 9 de cada 10 personas cuentan con acceso a agua potable en sus hogares a través de la red pública, 
+      siendo este el 90.6% de la población. En cambio, el 33% no cuenta con esta red de agua potable, ya que su acceso 
+      es limitado al no contar con servicios de saneamiento.
+      <br><br>
+      Nuestra misión es generar proyectos de solución para que empresas y ONGs lo implementen en sus proyectos y aseguren 
+      que todo el país cuente con agua potable en sus hogares.
+    </p>
+  </div>
+
+  <div style="flex-shrink: 0;">
+    <img src="https://sinia.minam.gob.pe/sites/default/files/sinia/archivos/public/docs/750.jpg"
+         alt="Descripción"
+         style="width: 200px; height: auto;">
+  </div>
 </div>
-<div class="formulario-contacto">
-    
+
+<hr>
+
+  <div class="container">
+  <div class="cuadro">
+    <p>Únete a nosotros, y así más personas podrán aprovechar el agua potable</p>
+  </div>
+
+  <div class="formulario-contacto"> 
     <h2>Contáctanos</h2>
     <form action="#" method="post">
       <label for="nombres">Nombres:</label>
@@ -94,19 +84,19 @@
       <button type="submit">Enviar</button>
     </form>
   </div>
+</div>
 
     </picture>
-    <footer style="background-color: blue; color: white; text-align: center; padding: 20px;">
+    <br>
+    <footer style="background-color: blue; color: #333; text-align: center; padding: 20px;">
   <p>&copy; Manatial de vida 2025</p>
-  <hr>
+  <hr style="border: none; height: 2px; background-color: #333;">
   <p>
-    <a href="#privacidad" style="color: grey; text-decoration: none; margin: 0 10px;">Política de Privacidad</a> |
-    <a href="#terminos" style="color: grey; text-decoration: none; margin: 0 10px;">Términos y Condiciones</a> |
-    <a href="#contacto" style="color: grey; text-decoration: none; margin: 0 10px;">Contacto</a>
+    <a href="#privacidad" style="color: #333; text-decoration: none; margin: 0 10px;">Política de Privacidad</a> |
+    <a href="#terminos" style="color: #333; text-decoration: none; margin: 0 10px;">Términos y Condiciones</a> |
+    <a href="#contacto" style="color: #333; text-decoration: none; margin: 0 10px;">Contacto</a>
   </p>
 </footer>
-
-
 
 </body>
 </html>
