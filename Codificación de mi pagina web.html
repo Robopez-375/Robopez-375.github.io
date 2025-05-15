@@ -3,19 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Manantial de vida</title>
+    <style>
+        body {
+          margin: 0;
+          font-family: Caveat;
+          background-color: #05bafd;
+        }
+        html {
+        scroll-behavior: smooth;
+        }
+        header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #0c45ff;
+  color: #333;
+  position: fixed;  
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  margin-left: 15px;
+}
+body {
+  padding-top: 70px;
+}
+section {
+  scroll-margin-top: 80px;
+}
+
+
+        .contenedor {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .imagen-con-texto {
+      text-align: center;
+      width: 48%; 
+    }
+    .imagen-con-texto img {
+      width: 100%;
+      height: auto;
+    }
+     .container {
+  display: flex;
+  gap: 20px; 
+}
+
+.cuadro { 
+  border: 2px solid #333;
+  padding: 20px;
+  background-color: blue;
+  width: 300px;
+  border-radius: 10px;
+  font-size: 40px;
+}
+
+.formulario-contacto {
+  max-width: 400px;
+}
+
+.formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-contacto label {
+  margin-top: 10px;
+}
+
+.formulario-contacto input {
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.formulario-contacto button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario-contacto button:hover { 
+  background-color: #0056b3;
+}
+h1{
+  text-align: center;
+      width: 100%; 
+      font-size: 30px;
+      
+}
+      </style>
 </head>
 <body>
     <header>
         <div class="logo"> Manantial de vida</div>
         <nav>
           <a href="#inicio">Inicio</a>
-          <a href="#Acerca de">Acerca de</a>
-          <a href="#Recaudaciones">Recaudaciones</a>
-          <a href="#Noticias">Noticias</a>
+          <a href="#acerca de">Acerca de</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
         </nav>
       </header>
+      
       <br>
+      <section id="inicio">
       <h1>Bienvenido</h1>
       <div class="contenedor">
     <div class="imagen-con-texto">
@@ -30,16 +140,26 @@
 
     <div class="imagen-con-texto">
       <p>
-        Contrarrestar los impactos industriales y de la minería ilegal para mantener el agua limpia en zonas necesitadas.
+        Contrarrestemos los impactos de la minería ilegal sobre el agua para que la contaminación no llegue a afectar nuestra salud.
       </p>
       <img
         src="https://i0.wp.com/efe.com/wp-content/uploads/2024/08/Peru.jpg?fit=1080%2C720&ssl=1"
         alt="Otra descripción de la imagen">
     </div>
   </div>
+  </section>
+  <br>
+  <section id="acerca de">
+  <hr>
+  <br>
+  <h2>Que somos</h2>
+  <p>Somos una asociación dedicada a brindar agua potable y limpia en zonas del país con acceso limitado a ella, para  beneficiar la calidad de vida en cada región.</p>
+  <br>
       <hr>
+  </section>
    
 </p>
+<section id="proyectos">
 <div style="display: flex; align-items: center; justify-content: space-between;">
   <div style="flex: 1; padding-right: 20px;">
     <p>
@@ -58,8 +178,10 @@
          style="width: 200px; height: auto;">
   </div>
 </div>
-
+</section>
 <hr>
+<br>
+<section id="contacto">
 
   <div class="container">
   <div class="cuadro">
@@ -67,7 +189,7 @@
   </div>
 
   <div class="formulario-contacto"> 
-    <h2>Contáctanos</h2>
+    <h3>Contáctanos</h3>
     <form action="#" method="post">
       <label for="nombres">Nombres:</label>
       <input type="text" id="nombres" name="nombres" required>
@@ -87,8 +209,9 @@
 </div>
 
     </picture>
+    </section>
     <br>
-    <footer style="background-color: blue; color: #333; text-align: center; padding: 20px;">
+    <footer style="background-color: #0c45ff; color: #333; text-align: center; padding: 20px;">
   <p>&copy; Manatial de vida 2025</p>
   <hr style="border: none; height: 2px; background-color: #333;">
   <p>
